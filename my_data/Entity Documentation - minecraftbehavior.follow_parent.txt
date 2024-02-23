@@ -1,0 +1,58 @@
+Entity Documentation - minecraft:behavior.follow_parent
+Article
+19/09/2023
+4 contributeurs
+Dans cet article
+Parameters
+Example
+Vanilla entities examples
+Vanilla entities using minecraft:behavior.follow_parent
+minecraft:behavior.follow_parent compels an entity that has been tagged as a baby to follow their parent around.
+
+ Important
+
+minecraft:behavior.follow_parent requires the minecraft:is_baby component in order to have an adult mob tagged as a parent for the entity.
+
+Parameters
+Name	Default Value	Type	Description
+priority	not set	Integer	The higher the priority, the sooner this behavior will be executed as a goal.
+speed_multiplier	1.0	Decimal	Movement speed multiplier of the mob when using this AI Goal.
+Example
+JSON
+
+Copier
+"minecraft:behavior.follow_parent":{
+    "priority": 2,
+    "speed_multiplier":1.10
+}
+Vanilla entities examples
+horse
+JSON
+
+Copier
+"minecraft:behavior.follow_parent": {
+          "priority": 4,
+          "speed_multiplier": 1.0
+        }
+Vanilla entities using minecraft:behavior.follow_parent
+axolotl
+bee
+chicken
+cow
+dolphin
+donkey
+fox
+goat
+hoglin
+horse
+llama
+mooshroom
+mule
+panda
+pig
+polar_bear
+rabbit
+sheep
+skeleton_horse
+strider
+zombie_horse

@@ -1,0 +1,38 @@
+Entity Documentation - minecraft:behavior.barter
+Article
+19/09/2023
+4 contributeurs
+Dans cet article
+Parameters
+Example
+Vanilla entities examples
+Vanilla entities using minecraft:behavior.barter
+minecraft:behavior.barter compels an entity to drop an item in return after a player offers a trade by dropping a specific item near the entity.
+
+ Important
+
+minecraft:behavior.barter requires the following in order to work properly;
+
+minecraft:barter component.
+barter_table loot table.
+Parameters
+Name	Default Value	Type	Description
+priority	not set	Integer	The higher the priority, the sooner this behavior will be executed as a goal.
+Example
+JSON
+
+Copier
+"minecraft:behavior.barter":{
+    "priority": 1
+}
+Vanilla entities examples
+piglin
+JSON
+
+Copier
+"minecraft:barter": {
+          "barter_table": "loot_tables/entities/piglin_barter.json",
+          "cooldown_after_being_attacked": 20
+        }
+Vanilla entities using minecraft:behavior.barter
+piglin

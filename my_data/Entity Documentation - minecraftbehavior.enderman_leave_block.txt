@@ -1,0 +1,35 @@
+Entity Documentation - minecraft:behavior.enderman_leave_block
+Article
+19/09/2023
+6 contributeurs
+Dans cet article
+Parameters
+Example
+Vanilla entities examples
+Vanilla entities using minecraft:behavior.enderman_leave_block
+minecraft:behavior.enderman_leave_block compels the entity to drop the block they are currently holding.
+
+ Notes
+
+This behavior can only be used by the enderman entity type.
+
+Parameters
+Name	Default Value	Type	Description
+priority	not set	Integer	The higher the priority, the sooner this behavior will be executed as a goal.
+Example
+JSON
+
+Copier
+"minecraft:behavior.enderman_leave_block":{
+    "priority": 8
+}
+Vanilla entities examples
+enderman
+JSON
+
+Copier
+"minecraft:behavior.enderman_leave_block": {
+    "priority": 10
+}
+Vanilla entities using minecraft:behavior.enderman_leave_block
+enderman

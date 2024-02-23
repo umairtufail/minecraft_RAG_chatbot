@@ -1,0 +1,31 @@
+Block Documentation - Block Event Responses
+Article
+10/01/2024
+2 contributeurs
+Below is a list of all the available Block Event Responses within Minecraft: Bedrock Edition for use with Block Triggers.
+
+ Important
+
+Block Event Responses require the Holiday Creator Features experimental toggle to be set to true in order to function properly.
+
+Holiday Creator Features contains experimental gameplay features. As with all experiments, you may see additions, removals, and changes in functionality in Minecraft versions without significant advanced warning.
+
+To learn more about Experimental Features, please visit Experimental Features in Minecraft: Bedrock Edition.
+
+Block Event Responses List
+Name	Default Value	Type	Description
+add_mob_effect	not set	JSON Object	Apply mob effect to a target.
+damage	not set	JSON Object	Deals damage to the target.
+decrement_stack	not set	JSON Object	Decrement item stack.
+die	not set	JSON Object	Kill target. If the target is self and this is run from a block then destroy the block.
+play_effect	not set	JSON Object	Spawns a particle effect relative to the target position.
+play_sound	not set	JSON Object	Play a sound relative to the target position.
+remove_mob_effect	not set	JSON Object	Removes mob effect from the target.
+run_command	not set	JSON Object	Trigger a slash command or a series of slash commands set in an array.
+set_block	not set	JSON Object	Sets this block to another block type.
+set_block_at_pos	not set	JSON Object	Sets a block relative to this block to another block type.
+set_block_state	not set	JSON Object	Sets a block state on this block.
+spawn_loot	not set	JSON Object	Spawn loot from block.
+swing	not set	JSON Object	Event causes the actor to swing.
+teleport	not set	JSON Object	Teleport a target randomly around destination point.
+transform_item	not set	JSON Object	Transforms item into another item.

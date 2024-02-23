@@ -1,0 +1,75 @@
+Premiers pas avec le développement d'extensions pour l'édition Bedrock
+Article
+27/04/2022
+2 contributeurs
+Dans cet article
+com.mojang
+Visual Studio Code
+Extensions de Visual Studio Code
+Quelle est la prochaine étape?
+Les extensions sont la première étape de votre parcours vers l'amélioration des niveaux de personnalisation de Minecraft: Bedrock Edition. Les extensions permettent aux joueurs de transformer l'apparence de leurs mondes et même de changer le comportement de leurs créatures. Par exemple, vous pouvez modifier le rayon de l’explosion d’un creeper et la texture de ce dernier.
+
+Creeper ayant été re-texturé pour ressembler à de la TNT
+
+Dans ce tutoriel, vous apprendrez les éléments suivants:
+
+La structure de fichier utilisée par les extensions de Minecraft
+Le logiciel utilisé pour modifier les fichiers JSON.
+Les extensions disponibles pour permettre le développement des extensions.
+com.mojang
+Lorsque Minecraft est installé sur votre ordinateur, il existe un dossier nommé com.mojang qui est généré dans le dossier AppData. Vous devrez trouver ce dossier pour pouvoir y ajouter votre contenu.
+
+Pour pouvoir localiser le dossier com.mojang sur votre ordinateur, vous aurez besoin de cocher la case Éléments masqués, comme indiqué ci-dessous. puisque vous êtes en plein dedans, continuez et cochez également la case pour Extensions de nom de fichier.
+
+Affichage des éléments masqués
+Ouvrez l'explorateur de fichiers depuis la barre des tâches.
+Sélectionnez l'onglet Affichage.
+Dans la section Afficher/masquer, cochez les cases pour Extensions de nom de fichier et Éléments masqués.
+Image des options d'affichage de la fenêtre de l'explorateur de fichiers sous Windows10. Les cases Extensions de nom de fichier et Éléments masqués sont cochées pour indiquer qu'elles sont définies sur true
+
+Localisation du dossier com.mojang
+Appuyez sur Win+R pour ouvrir la fenêtre Exécuter.
+Copiez et collez ce qui suit dans le champ Ouvrir: %localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang
+Cliquez sur OK.
+ Conseil
+
+Il serait recommandé d'enregistrer un raccourci vers ce dossier sur votre bureau.
+
+Comme le montre l'image ci-dessous, plusieurs sous-répertoires se trouvent dans le dossier com.mojang.
+
+Image du dossier com.mojang dans un explorateur de fichier Windows.
+
+ Conseil
+
+Si vous voyez plus de contenu dans ce dossier que ce qui est montré ci-dessus, pas de panique! Cette image montre une toute nouvelle installation de Minecraft.
+
+Packs de comportement, de skin et de ressources
+Il existe trois dossiers nommés behavior_packs , resource_packs et skin_packs qui stockeront le contenu personnalisé finalisé ajouté à Minecraft: Bedrock Edition. Ne vous inquiétez pas de ces dossiers pour le moment. Vous allez développer du contenu, vous travaillerez donc dans les versions de développement de ces dossiers, comme indiqué dans la section suivante.
+
+Packs de développement
+Vous utiliserez les dossiers development_resource_packs et development_behavior_packs pour les tutoriels sur le Pack de ressources et le Pack de comportement. Le dossier development_skin_packs est utilisé pour développer des packs de skin. Les dossiers des packs de développement sont actualisés à chaque lancement de Minecraft, afin que vous puissiez charger et tester rapidement les modifications que vous avez apportées à leur contenu.
+
+minecraftWorlds
+minecraftWorlds contient chaque monde qui a été généré dans la version actuelle de Minecraft. Chaque dossier disposera également de dossiers de packs de ressources et de comportement pour contenir tous les packs pouvant être utilisés dans le monde.
+
+ Conseil
+
+Lors de l'installation d'une nouvelle compilation de Minecraft, il est recommandé d'enregistrer une copie de ce dossier à utiliser comme sauvegarde, afin d'éviter toute perte potentielle des mondes Minecraft que vous pourriez avoir.
+
+Visual Studio Code
+JSON est un format de fichier texte populaire utilisé par Minecraft: Bedrock Edition afin d'interagir avec le contenu. Un fichier JSON peut être modifié dans n'importe quel éditeur de texte tel que Notepad ou Word. Cependant, Visual Studio Code est un éditeur de texte gratuit qui est compatibles avec les extensions tierces, y compris certaines conçues spécifiquement pour le développement de l'édition Bedrock.
+
+Installation de Visual Studio Code
+Utilisez le lien ici pour installer Visual Studio Code.
+
+Extensions de Visual Studio Code
+Visual Studio Code est compatible avec les extensions créées par la communauté des développeurs Visual Studio Code. Les extensions sont un excellent moyen pour vous permettre d'écrire et de comprendre la syntaxe Minecraft lorsque vous travaillez sur des packs de ressources et de comportement.
+
+Installation d'extensions
+Cliquez sur ce lien afin de télécharger BedrockDefinitions pour Visual Studio Code.
+Cliquez sur ce lien afin de télécharger Blockception's Minecraft Bedrock Development pour Visual Studio Code.
+Quelle est la prochaine étape?
+Maintenant que votre environnement de développement est configuré, vous pouvez commencer à créer votre première extension et en apprendre davantage sur les packs de ressources.
+
+
+Si vous souhaitez apprendre à connaître les commandes dans Minecraft, allez consulter l'introduction aux blocs de commande pour apprendre à les utiliser et lier différentes commandes entre elles.

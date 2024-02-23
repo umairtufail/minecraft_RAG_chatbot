@@ -1,0 +1,26 @@
+Block Documentation - damage
+Article
+05/01/2024
+4 contributeurs
+Dans cet article
+Extra Parameters
+Example
+damage is an event response that applies damage to a target.
+
+Extra Parameters
+damage can use the following parameters
+
+Name	Default Value	Type	Description
+amount	0	Integer	The amount of damage to deal.
+mob_amount	0	Integer	The amount of damage to deal if held by an entity.
+target	self	Minecraft Filter	The target context to execute against.
+type	not set	String	The type of damage to deal.
+Example
+JSON
+
+Copier
+"damage":{
+    "amount" : 1,
+    "target" : {"test": "player"},
+    "type" : "lava"
+}

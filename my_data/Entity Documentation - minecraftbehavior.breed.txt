@@ -1,0 +1,57 @@
+Entity Documentation - minecraft:behavior.breed
+Article
+19/09/2023
+4 contributeurs
+Dans cet article
+Parameters
+Example
+Vanilla entities examples
+Vanilla entities using minecraft:behavior.breed
+minecraft:behavior.breed allows an entity to breed with other entities that have been assigned.
+
+ Important
+
+minecraft:behavior.breed requires the minecraft:breedable component in order to work properly.
+
+Parameters
+Name	Default Value	Type	Description
+priority	not set	Integer	The higher the priority, the sooner this behavior will be executed as a goal.
+speed_multiplier	1.0	Decimal	Movement speed multiplier of the mob when using this AI Goal.
+Example
+JSON
+
+Copier
+"minecraft:behavior.breed":{
+    "priority": 1,
+    "speed_multiplier": 3.0
+}
+Vanilla entities examples
+cow
+JSON
+
+Copier
+"minecraft:behavior.breed": {
+          "priority": 3,
+          "speed_multiplier": 1.0
+        }
+Vanilla entities using minecraft:behavior.breed
+axolotl
+bee
+cat
+chicken
+cow
+donkey
+fox
+goat
+hoglin
+horse
+llama
+mooshroom
+ocelot
+panda
+pig
+rabbit
+sheep
+strider
+turtle
+wolf
