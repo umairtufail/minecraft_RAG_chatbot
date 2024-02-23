@@ -2,7 +2,7 @@ import os
 from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.vectorstores import FAISS
 from langchain.text_splitter import RecursiveCharacterTextSplitter 
-from llama_index.core import VectorStoreIndex
+
 
 DATA_PATH = 'my_data/'
 DB_FAISS_PATH = 'vectorstore/db_faiss'

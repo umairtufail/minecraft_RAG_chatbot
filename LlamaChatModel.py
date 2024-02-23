@@ -1,8 +1,6 @@
-from langchain.document_loaders import PyPDFLoader, DirectoryLoader
 from langchain import PromptTemplate
 from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.vectorstores import FAISS
-from langchain.llms import CTransformers
 from langchain.chains import RetrievalQA
 from langchain.callbacks.manager import CallbackManager
 import chainlit as cl
